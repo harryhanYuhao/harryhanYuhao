@@ -7,7 +7,7 @@
 ![Streaks](https://streak-stats.demolab.com/?user=harryhanYuhao&theme=horizon)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=harryhanYuhao&layout=compact&theme=radical&langs_count=12&hide=tex,html,css,makefile,cmake)
-![mattn's github stats](https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true&count_private=true&line_height=28&theme=radical)
+![Harry's github stats](https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true&count_private=true&line_height=28&theme=radical)
 
 <!---
 harryhanYuhao/harryhanYuhao is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
