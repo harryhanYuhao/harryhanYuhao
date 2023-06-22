@@ -61,3 +61,8 @@ Among the myriad of resources those happenned to catch my attention upon first g
 
 ### R
 
+## Graphics 
+
+### OpenGL with c++
+
+* OGLDEV on [Youtube](https://www.youtube.com/@OGLDEV) and [Github](https://github.com/emeiri/ogldev.git). A online OpenGL tutoiral. ***EXTREMELY HELPFUL***
