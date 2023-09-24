@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.1pt}
+% \input{glyphtounicode}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% TODO:
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Yuhao Han} \\ \vspace{1pt}
+    16 Montague Street, Edinburgh, EH8 9QW
+    \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 07769466855 ~ \href{mailto:s2162783@ed.ac.uk}{\raisebox{-0.2\height}\faEnvelope\  \underline{s2162783@ed.ac.uk}} ~ 
+    % \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+    \href{https://github.com/harryhanYuhao}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/harryhanYuhao}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Edinburgh}{Sep. 2021 -- Present}
+      {Master of Mathematics(MMATH)}{Expected Graduation: May 2026}
+    \resumeSubheading
+      {Hamden Hall Country Day School}{Sep. 2018 -- Jun. 2021}
+      {Graduating Cum Laude}{Hamden, CT, USA}
+    \resumeSubheading
+      {Clearwater Central Catholic High School}{Aug. 2017 -- Jun. 2018}
+      {}{Clearwater, FL, USA}
+    \resumeSubheading
+      {Zhengheng Middle School}{Sep. 2014 -- Jun. 2017}
+      {}{Changzhou, Jiangsu, China}
+  \resumeSubHeadingListEnd
+
+\section{Speaking Languages}
+\begin{multicols}{2}
+\begin{itemize}[itemsep=-5pt, parsep=3pt]
+    \item \small   \textbf{Mandarin}: Native Speaker
+    \item    \textbf{English}: Fluent; (TOEFL 115/120) 
+    \item    \textbf{Italian}: C1 
+    \item    \textbf{Latin}: Able to Read
+  \end{itemize}
+ \end{multicols}
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+%
+%     \resumeSubheading
+%       {Electronics Company}{May 2020 -- August 2020}
+%       {Software Engineer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+%         \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+%         \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+%         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+%       \resumeItemListEnd
+%     
+%   \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading 
+    {
+    \href{https://github.com/harryhanYuhao/aformattor.git}{\underline{\textbf{aformattor}}} 
+    $|$ \emph{x86-64 assembly formattor in C} 
+    }{Aug 2023}
+
+    \vspace{-30pt}
+    \resumeProjectHeading 
+    {
+    \href{https://github.com/harryhanYuhao/argentum.git}{\underline{\textbf{argentum}}} 
+    $|$ \emph{a terminal text editor in C} 
+    }{Aug 2023}
+
+    \vspace{-30pt}
+    \resumeProjectHeading 
+    {
+    \href{https://github.com/harryhanYuhao/kitchenChaos.git}{\underline{\textbf{KitchenChaos}}} 
+    $|$ \emph{3D Game made with Unity}
+    }{Aug 2023}
+
+   \resumeSubHeadingListEnd
+
+
+%
+\section{Patents}
+\resumeItemListStart
+\resumeItem{Composition and Preparation of Sunscreen in Hydroxyapatite. (8/2020) Invention filed as provisional patent to USPTO. Paper pending publication.}
+\resumeItemListEnd
+
+%-----------Working Experience-----------
+\section{Working Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Edinburgh}{March 2022 -- Present}
+      {Student Ambassador}{}
+  \resumeSubHeadingListEnd
+
+%-----------INVOLVEMENT---------------
+\section{Hobbies}
+    \resumeSubHeadingListStart
+    \resumeSubheading{Astrophotography}{}{I have taken \href{https://telescopius.com/profile/yuhao_han}{\underline{pictures}} of many celestial objects}{}
+    \resumeSubheading{Arch Ricing}{}{I like to customise my system}{}
+    \resumeSubHeadingListEnd
+
+
+\end{document}
