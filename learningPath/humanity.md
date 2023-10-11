@@ -35,4 +35,3 @@
 - Athenaze, An Introduction to Ancient Greek. Maurice Balme and Gilbert Lawall
 - Reading Greek, Grammar and Exercises. The Joint Association of Classical Teacher's Greek Course. Cambridge University Press.
 
-
