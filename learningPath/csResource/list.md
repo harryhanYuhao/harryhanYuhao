@@ -61,6 +61,10 @@ Among the myriad of resources those happenned to catch my attention upon first g
 
 ### R
 
+## Networking
+
+* Beej’s Guide to Network Programming
+
 ## Graphics 
 
 ### OpenGL with c++
