@@ -9,9 +9,10 @@
 
 ### Computer Graphics
 
-### Function Programming: Types 
+### Function Programming
 
 - (Aug 9 2023) Haskell and Agda
+- Lean: the theorem prover. This seems promising.
 
 ## Short Term Ambition
 
