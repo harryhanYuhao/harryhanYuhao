@@ -14,11 +14,19 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
+\usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
+% \hypersetup{
+% 	colorlinks, 
+% 	linkcolor={red!40!black}, 
+% 	citecolor={blue!50!black},
+% 	urlcolor={blue!70!black},
+% }
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
+% \usepackage{fontawesome5}
+\usepackage{fontawesome}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
@@ -118,11 +126,13 @@
 
 \begin{center}
     {\Huge \scshape Yuhao Han} \\ \vspace{1pt}
-    16 Montague Street, Edinburgh, EH8 9QW
+	20 Bernard Terrace, Edinburgh, EH8 9AN
     \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ 07769466855 ~ \href{mailto:s2162783@ed.ac.uk}{\raisebox{-0.2\height}\faEnvelope\  \underline{s2162783@ed.ac.uk}} ~ 
     % \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
-    \href{https://github.com/harryhanYuhao}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/harryhanYuhao}}
+    \href{https://github.com/harryhanYuhao}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/harryhanYuhao}} ~
+    \href{https://yhhan.net}{\raisebox{-0.2\height}\faChain \underline{yhhan.net}} ~
+
     \vspace{-8pt}
 \end{center}
 
@@ -136,22 +146,14 @@
     \resumeSubheading
       {Hamden Hall Country Day School}{Sep. 2018 -- Jun. 2021}
       {Graduating Cum Laude}{Hamden, CT, USA}
-    \resumeSubheading
-      {Clearwater Central Catholic High School}{Aug. 2017 -- Jun. 2018}
-      {}{Clearwater, FL, USA}
-    \resumeSubheading
-      {Zhengheng Middle School}{Sep. 2014 -- Jun. 2017}
-      {}{Changzhou, Jiangsu, China}
   \resumeSubHeadingListEnd
 
 \section{Speaking Languages}
 \begin{multicols}{2}
-\begin{itemize}[itemsep=-5pt, parsep=3pt]
-    \item \small   \textbf{Mandarin}: Native Speaker
-    \item    \textbf{English}: Fluent; (TOEFL 115/120) 
-    \item    \textbf{Italian}: B1 
-    \item    \textbf{Latin}: Able to Read
-  \end{itemize}
+        \textbf{Mandarin}: Native Speaker \hfill
+        \textbf{English}: Fluent (TOEFL: 115/120) \hfill
+        \textbf{Italian}: C2 \hfill
+        \textbf{Latin}: Able to Read \hfill
  \end{multicols}
 
 %------RELEVANT COURSEWORK-------
@@ -172,6 +174,23 @@
 %         \vspace*{2.0\multicolsep}
 %     %\resumeSubHeadingListEnd
 
+
+%-----------Working Experience-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+	{Founder of YETIN LTD}{Dec 2023 -- Present}
+	{\href{https://yetin.net}{\underline{yetin.net}} is a knowledge exchange platform for undergraduate students in UK. It is in early development.}{}
+    \resumeSubheading
+	{Research Dolphin Interconnect PCIe NTB}{Oct 2023 -- Present}
+	{I am part of research group of Dr Antonio Barbalace at the University of Edinburgh.}{}
+    \resumeSubheading
+      {Student Ambassador}{March 2022 -- Present}
+      {Introducing University of Edinburgh to prospective students; help admission officers at various events.}{}
+    \resumeSubheading
+      {Mathpals Tutor}{Sept 2022 -- Jun 2022}
+      {Helping year-1 Math students with their course work.}{}
+  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 % \section{Experience}
@@ -197,18 +216,24 @@
     \resumeSubHeadingListStart
     \resumeProjectHeading 
     {
+		\href{https://yhhan.net}{\underline{\textbf{yhhan.net}}}
+    $|$ \emph{Personal Portfolio Website} 
+    }{}
+    \vspace{-27pt}
+    \resumeProjectHeading 
+    {
     \href{https://github.com/harryhanYuhao/aformatter.git}{\underline{\textbf{aformatter}}} 
     $|$ \emph{x86-64 assembly formatter in C} 
     }{Aug 2023}
 
-    \vspace{-30pt}
+    \vspace{-27pt}
     \resumeProjectHeading 
     {
     \href{https://github.com/harryhanYuhao/argentum.git}{\underline{\textbf{argentum}}} 
     $|$ \emph{a terminal text editor in C} 
     }{Aug 2023}
 
-    \vspace{-30pt}
+    \vspace{-27pt}
     \resumeProjectHeading 
     {
     \href{https://github.com/harryhanYuhao/kitchenChaos.git}{\underline{\textbf{KitchenChaos}}} 
@@ -222,39 +247,26 @@
     \resumeSubHeadingListStart
     \resumeProjectHeading 
     { 
-		Linux \textbullet{} C \textbullet{} C++ \textbullet{} Bash \textbullet{} Fortran \textbullet{} x86-64 Assembly \textbullet{} \LaTeX \textbullet Git \textbullet Vim
+		Linux \textbullet{} C \textbullet{} C++ \textbullet{} Bash \textbullet{} Fortran \textbullet{} \LaTeX \textbullet Git \textbullet Vim \textbullet Typescript \textbullet React \textbullet Nextjs \textbullet Java
 	}{Proficient}
+    \vspace{-27pt}
     \resumeProjectHeading 
     { 
-		OpenGL \textbullet Lua \textbullet{} Julia \textbullet Python \textbullet{} Java \textbullet{} MATLAB \textbullet{} Unity 
+		OpenGL \textbullet Lua \textbullet{} Julia \textbullet Python \textbullet{} x86-64 assembly \textbullet{} MATLAB \textbullet{} Unity \textbullet AWS
 	}{Familiar}
 
    \resumeSubHeadingListEnd
 %
 \section{Patents}
 \resumeItemListStart
-\resumeItem{Composition and Preparation of Sunscreen in Hydroxyapatite. (8/2020) Invention filed as provisional patent to USPTO. Paper pending publication.}
+\resumeItem{Composition and Preparation of Sunscreen in Hydroxyapatite (8/2020). Invention filed as provisional patent to USPTO. Paper pending publication.}
 \resumeItemListEnd
 
-%-----------Working Experience-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Student Ambassador}{March 2022 -- Present}
-      {Introducing University of Edinburgh to prospective students; help admission officers at various events}{}
-    \resumeSubheading
-      {Mathpals Tutor}{Sept 2022 -- Jun 2022}
-      {Helping year-1 Math students with their course work}{}
-    \resumeSubheading
-      {Mathclan Leader}{Sept 2022 -- Present}
-      {Organizing ice-breaking activities to year-1 students}{}
-  \resumeSubHeadingListEnd
 
 %-----------INVOLVEMENT---------------
 \section{Hobbies}
     \resumeSubHeadingListStart
-    \resumeSubheading{Linux Kernel}{}{I am a Kernel developer}{}
-    \resumeSubheading{Arch Ricing}{}{I like to customise my system}{}
+    \resumeSubheading{Linux Kernel}{}{I am a Kernel developer and Linux enthusiast}{}
     \resumeSubheading{Astrophotography}{}{I have taken \href{https://telescopius.com/profile/yuhao_han}{\underline{pictures}} of many celestial objects}{}
     \resumeSubHeadingListEnd
 
