@@ -1,0 +1,267 @@
+%!TEX program = luatex
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{ctexart}
+\usepackage[T1]{fontspec}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+% \hypersetup{
+% 	colorlinks, 
+% 	linkcolor={red!40!black}, 
+% 	citecolor={blue!50!black},
+% 	urlcolor={blue!70!black},
+% }
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \usepackage{fontawesome5}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.1pt}
+% \input{glyphtounicode}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% TODO:
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape 韩 宇濠} \\ \vspace{1pt}
+	20 Bernard Terrace, Edinburgh, EH8 9AN
+    \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +44 7769466855 ~ \href{mailto:s2162783@ed.ac.uk}{\raisebox{-0.2\height}\faEnvelope\  \underline{s2162783@ed.ac.uk}} ~ 
+    % \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+    \href{https://github.com/harryhanYuhao}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/harryhanYuhao}} ~
+    \href{https://yhhan.net}{\raisebox{-0.2\height}\faChain \underline{yhhan.net}} ~
+
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{教育}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {爱丁堡大学}{2021. 9 -- 今}
+      {数学本硕(MMATH Hons)}{毕业时间 : 2026 6}
+  \resumeSubHeadingListEnd
+
+\section{语言}
+\begin{multicols}{2}
+        \textbf{英文}: 流利 (TOEFL: 115/120) \hfill
+        \textbf{意大利语}: 可日常交流 \hfill
+        \textbf{拉丁语}: 可以读书 \hfill
+ \end{multicols}
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------Working Experience-----------
+\section{经历}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+	{YETIN LTD 创始人}{2023 12 -- 今}
+	{\href{https://yetin.net}{\underline{yetin.net}} 是英国大学生一站式知识交流平台。目前在发展初期。}{}
+    \resumeSubheading
+	{研究 PCIe NTB}{2023 10 -- 今}
+	{我是Dr. Antonio Barbalace实验室的实习研究员.}{}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+%
+%     \resumeSubheading
+%       {Electronics Company}{May 2020 -- August 2020}
+%       {Software Engineer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+%         \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+%         \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+%         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+%       \resumeItemListEnd
+%     
+%   \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{个人项目}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading 
+    {
+		\href{https://yhhan.net}{\underline{\textbf{yhhan.net}}}
+    $|$ \emph{个人网站} 
+	
+    }{}
+    \vspace{-27pt}
+    \resumeProjectHeading 
+    {
+    \href{https://github.com/harryhanYuhao/aformatter.git}{\underline{\textbf{aformatter}}} 
+    $|$ \emph{x86-64 汇编formatter in C} 
+    }{2023 8}
+
+    \vspace{-27pt}
+    \resumeProjectHeading 
+    {
+    \href{https://github.com/harryhanYuhao/argentum.git}{\underline{\textbf{argentum}}} 
+    $|$ \emph{用 C写的终端文档编辑器} 
+    } {2023 8}
+
+    \vspace{-27pt}
+    \resumeProjectHeading 
+    {
+    \href{https://github.com/harryhanYuhao/kitchenChaos.git}{\underline{\textbf{KitchenChaos}}} 
+    $|$ \emph{3D 游戏}
+    }{ 2023}
+
+   \resumeSubHeadingListEnd
+
+\section{编程技能}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading 
+    { 
+		Linux \textbullet{} C \textbullet{} C++ \textbullet{} Bash \textbullet{} Fortran \textbullet{} \LaTeX \textbullet Git \textbullet Vim \textbullet Typescript \textbullet React \textbullet Nextjs \textbullet Java
+	}{精通}
+    \vspace{-27pt}
+    \resumeProjectHeading 
+    { 
+		OpenGL \textbullet Lua \textbullet{} Julia \textbullet Python \textbullet{} x86-64 assembly \textbullet{} MATLAB \textbullet{} Unity \textbullet AWS
+	}{熟练}
+
+   \resumeSubHeadingListEnd
+%
+\section{专利}
+\resumeItemListStart
+\resumeItem{Composition and Preparation of Sunscreen in Hydroxyapatite (8/2020) 美国专利局作临时专利。论文即将发表在期刊}
+\resumeItemListEnd
+
+
+%-----------INVOLVEMENT---------------
+\section{爱好}
+    \resumeSubHeadingListStart
+    \resumeSubheading{Linux 内核}{}{我是linux 内核开发者}{}
+    \resumeSubheading{航天摄影}{}{我拍摄了很多天体的 \href{https://telescopius.com/profile/yuhao_han}{\underline{照片}}}{}
+    \resumeSubHeadingListEnd
+
+
+\end{document}
