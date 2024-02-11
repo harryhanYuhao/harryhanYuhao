@@ -1,6 +1,6 @@
 <picture>
   <source
-    srcset="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true&theme=dark"
+    srcset="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true&theme=radical"
     media="(prefers-color-scheme: dark)"
   />
   <source
@@ -12,7 +12,7 @@
 
 <picture>
   <source
-    srcset="https://github-readme-stats.vercel.app/api/wakatime?&theme=dark&username=yhhan&layout=donut-vertical&show_icons=true"
+    srcset="https://github-readme-stats.vercel.app/api/wakatime?&theme=radical&username=yhhan&layout=donut-vertical&show_icons=true"
     media="(prefers-color-scheme: dark)"
   />
   <source
@@ -21,3 +21,5 @@
   />
   <img src="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true" />
 </picture>
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=harryhanYuhao&theme=radical&langs_count=12&layout=donut-vertical&hide=tex,html,css,makefile,cmake,jupyter%20notebook)
