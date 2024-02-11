@@ -7,8 +7,17 @@
     srcset="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
   />
-  <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true" />
 </picture>
 
-![Harry's github stats](https://github-readme-stats.vercel.app/api/wakatime?&theme=radical&username=yhhan)
-
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api/wakatime?&theme=dark&username=yhhan&layout=donut-vertical&show_icons=true"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats.vercel.app/api/wakatime?&username=yhhan&layout=donut-vertical&show_icons=true"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true" />
+</picture>
