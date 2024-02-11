@@ -1,5 +1,6 @@
 # Personal Web
 
-I plan to build a personal website. 
+Domain `yhhan.net` is purchased on `godaddy.com`. 
 
-Domain `yhhan.net` is purchased on `godaddy.com`.
+The frontend is written in Nextjs and deployed by Vercel.
+
