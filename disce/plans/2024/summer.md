@@ -1,4 +1,0 @@
-# Interns
-
-- Wolfram Alpha
-- Mathworks
