@@ -25,6 +25,24 @@ For line breaks within prose, the formatter shall break the line at the same pos
 
 ## Long Term Ambition
 
+### Math library
+
+Math library for efficient and accurate computation.
+
+### 3D physics engine for research
+
+A physical engine with good graphics, that is factually accurate, implementing efficient mathamtics algorithms, easy to use, and can be played as a game or used to conduct research.
+
+It can be used to simulate the solar system, pendulums, fluid dynamics, etc. 
+
+Importantly, I want it to be like a game. That is, it is easy to use, intuitive, have good interface and graphics, available on most platforms, etc.
+
+### Mathematics Graphics engine
+
+There are still limited graphing software for math, including free software like desmos or proprietary software like Mathematica. Their graphing capabilities, especially for compilcated graphs with implicit functions, non algebraic functions, or multidimension graphs, are greatly limited.
+
+I want to create a capable graphing software that is free, easy to use, and produce beautiful and accurate results.
+
 ### Project: Latex Substitute
 
 We love latex, because it is the most, if not the only one, competent tool that empower us to typset professional level documents with our PC. We hate latex, because it contain so much of obscurity that have caused us endless trouble during typsetting. 
@@ -56,3 +74,14 @@ A tool to help ordinary people to typset professional level documents with ease.
 - Poppler, a C++ pdf library
 - xpdf, an open source pdf viewer and toolkit
 - ghostscript
+
+## Startup Ideas
+
+- Wechat Substitute
+- College Students' Social Network: (In progress: Yetin.net)
+
+### Leetcode
+ 
+I want to create a free version of leetcode.
+
+
