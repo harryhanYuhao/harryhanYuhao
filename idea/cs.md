@@ -75,13 +75,3 @@ A tool to help ordinary people to typset professional level documents with ease.
 - xpdf, an open source pdf viewer and toolkit
 - ghostscript
 
-## Startup Ideas
-
-- Wechat Substitute
-- College Students' Social Network: (In progress: Yetin.net)
-
-### Leetcode
- 
-I want to create a free version of leetcode.
-
-
