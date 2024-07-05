@@ -15,7 +15,11 @@ Create a latin parser that parse the latin words to its stem, declension, congug
 
 Also, it shall be able to scan hexameters.
 
-### Tex Formatter
+### Tex Project Manager
+
+It is very cumbersome to manage tex projects: latex generates a lot of dump files; each latex project needs to be starting with a lot of bioler plate code, etc, there is no formatter, linter. LPS is barely working, etc.
+
+So there is a need for tex project manager, like cargo for rust or npm for nodejs.
 
 Format latex files. This formatter shall: 
 
