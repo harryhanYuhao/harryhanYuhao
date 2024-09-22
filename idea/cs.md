@@ -27,6 +27,10 @@ Format latex files. This formatter shall:
 
 For line breaks within prose, the formatter shall break the line at the same position as the pdf.
 
+### Rust raw mode library
+
+There are severl existing rust raw mode library, but they seems to be incompetent.
+
 ## Long Term Ambition
 
 ### Math library
