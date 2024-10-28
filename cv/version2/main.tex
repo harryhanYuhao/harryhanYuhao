@@ -19,10 +19,11 @@
 \usepackage{amsmath} % for math
 % \usepackage[
 %     colorlinks=false,
-%     linkbordercolor=black,% hyperlink borders will be red
+% 	pdfborder={0 0 0}, % hyperlink borders will be invisible
 %     pdfborderstyle={/S/U/W 1}, % border style will be underline of width 1pt
-%     pdftitle={Harry Han's CV},
-%     pdfauthor={Harry Han},
+%     % pdftitle={Harry Han's CV},
+%     % pdfauthor={Harry Han},
+%     linkbordercolor=black,% hyperlink borders will be red
 % ]{hyperref} % for links, metadata and bookmarks
 \usepackage[hidelinks]{hyperref}
 \usepackage[pscoord]{eso-pic} % for floating text on the page
@@ -146,7 +147,7 @@
 }%
 
 % save the original href command in a new command:
-\let\hrefWithoutArrow\href
+
 
 % new command for external links:
 
@@ -167,23 +168,23 @@
 
         \normalsize
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{mailto:s2162783@ed.ac.uk}{s2162783@ed.ac.uk}}%
+		\mbox{\href{mailto:s2162783@ed.ac.uk}{\underline{s2162783@ed.ac.uk}}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{tel:+44 7769466855}{07769466855}}%
+		\mbox{\href{tel:+44 7769466855}{\underline{07769466855}}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        % \mbox{\hrefWithoutArrow{https://yourwebsite.com/}{yourwebsite.com}}%
+		% \mbox{\href{https://yourwebsite.com/}{\underline{yourwebsite.com}}}%
         % \kern 5.0 pt%
         % \AND%
         % \kern 5.0 pt%
-        % \mbox{\hrefWithoutArrow{https://linkedin.com/in/yourusername}{linkedin.com/in/yourusername}}%
+        % \mbox{\href{https://linkedin.com/in/yourusername}{linkedin.com/in/yourusername}}%
         % \kern 5.0 pt%
         % \AND%
         % \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/harryhanYuhao}{github.com/harryhanYuhao}}%
+		\mbox{\href{https://github.com/harryhanYuhao}{\underline{github.com/harryhanYuhao}}}%
     \end{header}
 
 	% NOTE: INTRODUCTION
@@ -245,7 +246,7 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item I was part of the research Group of Dr. Antonio Barbalace in the school of informatics at the University of Edinburgh.
+                \item I was part of the research group of Dr. Antonio Barbalace in the school of informatics at the University of Edinburgh.
 				\item My work includes benchmarking virtual cachable memory provided by Dolphin NTB and developping drivers and softwares to increase its efficacy.
 				All works were within Linux kernel.
 				\item Part of the larger research project on Computer Express Link.
@@ -291,9 +292,9 @@
     \section{Projects}
 
         \begin{twocolentry}{
-            \href{https://book.yetin.net}{book.yetin.net}
+				\href{https://book.yetin.net}{\underline{book.yetin.net}}
         }
-		\href{https://book.yetin.net}{\textbf{Yetin Guide for Coding}}
+		\href{https://book.yetin.net}{\underline{\textbf{Yetin Guide for Coding}}}
 		\end{twocolentry}
         \vspace{0.10 cm}
         \begin{onecolentry}
@@ -304,7 +305,7 @@
         \begin{twocolentry}{
             Aug 2024
 		}
-			\href{https://github.com/harryhanYuhao/lox-rust.git}{\textbf{Lox Rust}}
+		\href{https://github.com/harryhanYuhao/lox-rust.git}{\underline{\textbf{Lox Rust}}}
 		\end{twocolentry}
         \vspace{0.10 cm}
         \begin{onecolentry}
