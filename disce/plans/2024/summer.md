@@ -2,14 +2,14 @@
 
 ## Science
 
-- Study Algebraic Geometry with Dr Sukjoo Lee
-- numerics: CGAL
-- Finish The book: Algebra
+- Study Algebraic Geometry with Dr Sukjoo Lee (done)
+- numerics: CGAL 
+- Finish The book: Algebra (done)
 
 ## Humanities
 
-* Finish Animal Farm
-* Finish Peter Jones: Reading Latin
+* Finish Animal Farm (done)
+* Finish Peter Jones: Reading Latin (partially done)
 * Learn Some German
 * Finish at least one book of scott
 
