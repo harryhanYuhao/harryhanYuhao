@@ -43,6 +43,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Install dependencies
+        run: |
+          cd jekyll_site
+          bundle install
       - name: Build with Jekyll
         run: |
             cd jekyll_site 
