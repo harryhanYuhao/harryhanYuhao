@@ -13,3 +13,8 @@
 
 - (Aug 9 2023) Haskell and Agda
 - Lean: the theorem prover. This seems promising.
+
+
+## Reading 
+
+- (March 2, 2025) Read Little Women
