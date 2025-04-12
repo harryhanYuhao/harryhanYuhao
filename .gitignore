@@ -7,3 +7,9 @@
 **.fdb_latexmk
 **.pdf
 **.odt
+
+*.test
+imports.*
+dist/
+public/
+.DS_Store
