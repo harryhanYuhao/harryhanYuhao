@@ -46,6 +46,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd jekyll_site
+          bundle config set --local path 'vendor/bundle'
           bundle install
       - name: Build with Jekyll
         run: |
