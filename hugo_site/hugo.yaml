@@ -47,12 +47,12 @@ params:
     keys: ["title", "permalink", "summary", "content"]
   homeInfoParams:
     Title: >
-      Some mathematics, coding, and Literature
+      Some mathematics, coding, and literature
 
     Content: >
       👋 Welcome to Harry's blog pages.
 
-      - This blog is made by [hugo](https://gohugo.io) and [papermod](https://github.com/adityatelange/hugo-PaperMod), and is deployed with Github Pages.
+      - This blog is made by [Hugo](https://gohugo.io) and [Papermod](https://github.com/adityatelange/hugo-PaperMod), and is deployed with Github Pages.
 
 
 
