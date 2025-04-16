@@ -1,4 +1,5 @@
-baseURL: https://harryhanyuhao.github.io/harryhanYuhao/
+# baseURL: https://harryhanyuhao.github.io/harryhanYuhao/
+baseURL: https://harryhanyuhao.github.io
 languageCode: en-us
 title: Harry's Blog
 theme: ["PaperMod"]
