@@ -2,13 +2,12 @@
 date: '2025-04-12T12:06:23+01:00'
 title: 'Deploy Hugo Blog site with Github Pages'
 # weight: 1
-tags: [" web", "blogging"]
+tags: ["web", "blogging"]
 showToc: true
 TocOpen: false
-draft: false
 hidemeta: false
 comments: false
-# description: "Simple steps to create a blog with Github Pages, Hugo, and PaperMod."
+description: "Quick steps to create a blog with Github Pages, Hugo, and PaperMod. Prerequisite: simple command line, git."
 # canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -39,11 +38,12 @@ To create a static blogging websites only requires
 1. Create the HTML, CSS, Javascript files, which are downloaded by the browser uponing entering its domain name;
 1. Obtain a domain name and host the files on a server connected to internect with this domain name.
 
-[Hugo](https://gohugo.com) and [Papermod](https://github.com/adityatelange/hugo-PaperMod) can read the Markdown files and produce stylish webpages. (That is the HTML, CSS, and Javascript files.)
+[Hugo](https://gohugo.com) and [Papermod](https://github.com/adityatelange/hugo-PaperMod) can read the markdown files and produce stylish webpages. (That is the HTML, CSS, and Javascript files.)
 Github pages is a free remote service hosting the file and provide the domain name.
 
 These tools are used to create a static blog website.
-The term static means the content of the website does not change with respect to userinput.
+The term static means the content of the website does not change with respect to user input. 
+In fact, there may be no options for user inputs at all.
 Most websites, however, are not static. 
 The prime examples are social medias, which can show live contents based on user inputs.
 Creating these websites, of course, are more complicated and requires a separate *backends*. (In comparison, all the files Hugo and Papermod created are *frontend*.)
@@ -51,7 +51,7 @@ Creating these websites, of course, are more complicated and requires a separate
 ## Creating the Website with Hugo
 
 Hugo has an official [tutorial](https://gohugo.io/getting-started/quick-start/), so is [Papermod](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation).
-Here presented an adaptation.
+Here is presented an adaptation.
 
 After installing Hugo and Git, create a Hugo project
 ```bash
@@ -68,18 +68,21 @@ Append the following line in `hugo.yaml`
 theme: ["PaperMod"]
 ```
 
-Start the hugo server with 
+Start the hugo testing server with 
 
 ```sh
-hugo server -O  # -O flags means open in browser
+hugo server -O  # -O flag will open the browser
 ```
 
-Create a markdown file, which must be placed under the directory `contents/posts/`
+The next command will create a markdown file of a specified format in directory `contents/posts/`.
+Each blog articles are renderred from the contents and the struture of these markdown files.
+
 ```sh
 hugo new content content/posts/my-first-post.md
 ```
 
-The content of the file will be shown in the browser. 
+Write the blog contents into this file. 
+Delete `draft: true` line in the preamble of the file to make it visible.
 
 ### Styling 
 
@@ -154,14 +157,31 @@ To hide particular pages from search, add
 ```
 searchHidden: true
 ```
-on top of that page's markdonw file.
+on top of that page's markdown file.
 
 ## Hosting with Github Pages
 
 Now the content is taken care of, we shall deploy it on Github.
 
-I recommend to append 
-```
+Deploying an website manually is troublesome. 
+The ideal and efficient workflow is that, whenever some changes is made in the blog, a quick command can be issued to automatically deploy our website.
+This can be achieved by git and github actions. 
+
+Github actions is a service for CI/CD (continuous integration/continuous deployment) workflow. 
+A custom workflow can be designed to build an deploy our blog which will be triggerred automatically when the source files are pushed to github.
+Github also offer Github Pages, a hosting service which integrated with github action nicely.
+All of the above services are free.
+
+If everything are set up correctly, each time changes are made in the blogging repository, the blogging website will be updated automatically. 
+This is great productivity boost.
+
+Let us set up the git and github actions.
+
+### Some local modifications
+
+Hugo create some auxiliary files which shall be ignored by git. 
+Append the following lines into the `.gitignore` file.
+```gitignore
 # .gitignore
 *.test
 imports.*
@@ -169,10 +189,17 @@ dist/
 public/
 .DS_Store
 ```
-into `.gitignore` file.
-Commit the changes to git. 
-Create a github repository. 
-To to the github repository. In `setting->code and automation -> pages`, change build and deployment source to Github Actions.
+
+The entry `baseURL` in `hugo.yaml` files needs to be set to
+
+```
+# hugo.yaml
+baseURL: https://<username>.github.io/<repository-name>/
+```
+
+`<username>` is github username. `<repository-name>` is the github remote repo name, which are yet to be created.
+
+The github actions are configured by a `yaml` files presented in `.github/workflows` directory. 
 
 Create a `.github/workflows/hugo.yml` files, and write into it 
 ```
@@ -244,4 +271,18 @@ The file is [here](https://github.com/harryhanYuhao/harryhanYuhao/blob/main/.git
 
 There are two things to take note. 
 One is to place the correct hugo-version in `Setup Hugo` step.
+The local hugo version can be found by
+```
+hugo version
+```
 Another is if the hugo site is not in the root directory of the git repository, you need to `cd` to correct directory and change the correct publish path in `Build` and `Upload Artifacts` steps.
+
+Commit the changes to git. 
+Now all local configurations are done.
+
+### Setup Github Pages
+
+Create a github repository. 
+In the github repository. In `setting->code and automation -> pages`, change build and deployment source to Github Actions.
+Pushing the local files to this github repository and everything shall work.
+

@@ -19,12 +19,10 @@ pygmentsUseClasses: true
 
 params:
   env: production
-  ShowCodeCopyButtons: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -36,6 +34,7 @@ params:
   showtoc: false
   tocopen: false
   ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
