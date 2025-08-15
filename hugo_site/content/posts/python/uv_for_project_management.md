@@ -1,19 +1,19 @@
 ---
 date: '2025-05-05T15:11:48+01:00'
 title: 'UV for Python Project Management'
+tags: ['python']
 ---
 
 ## Issues of Reproducibility
 
-Python is notoriously bad for reproducibility. 
+Python is notorious for its lack of reproducibility.
 (It is not the worst, the title of which shall be reserved, probably, for C++.)
 Clone any python repository with more then 1000 lines of code from GitHub and try to run it on your personal computer.
-The first step, which is to know which files to build and which command will execute the program, will be difficult enough.
-The much more difficult step, however, is to make sure your system has the correct version of python, each python package, each C library the python package rely on, and each driver and system software C library rely on.
-Hours could be spent without progress.
+The first step, which is how to execute the program, will be difficult enough.
+The nightmare, however, is to make sure your system has the correct version of python, compatible versions of each python package, each C library the python package rely on, and each driver and system software C library rely on.
 
+Python is not alone.
 This is the classical problem of code distribution and pacakge management. 
-Python is not alone. 
 
 In recent years python has included updates trying to solve this problem, including virtual environment `.venv` and `pyproject.toml`. 
 The upstream python development, however, may be descibed as slow and bureaucratic.
