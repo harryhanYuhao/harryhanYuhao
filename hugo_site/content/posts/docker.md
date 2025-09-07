@@ -19,13 +19,12 @@ UseHugoToc: true
 Docker is a virtualisation tool. 
 It can create lightweight, fast, isolated, and reproducible environments like virtual machines, in which an application can be tested reliably.
 
-An docker image is a snapshot of a operating system. 
-A container is a instance of an image, behaving like a running virtual machine.
+An docker image is a snapshot of an operating system. 
+A container is an instance of an image, behaving like a running virtual machine.
 
 ## Testing Process
 
-Say I want to test a rust project. 
-With file structure like
+Say I want to test a rust project with file structure like
 ```
 .
 ├── Cargo.lock
@@ -37,7 +36,7 @@ With file structure like
     └── debug
 ```
 
-In a brand new machine, everything needed to test this project is the rust-cargo suite, besides the source code.
+In a brand new operating system, everything needed to test this project is the rust-cargo suite, besides the source code.
 So I want the container to have them.
 
 All containers must be built from an image. 
@@ -63,10 +62,11 @@ docker images # list all images. You may see several images, as we have pulled o
 To instantiate a container, run 
 
 ```bash 
-docker run -it <image_name> /bin/bash # file the containter interactively in command mode
+docker run -it <image_name> /bin/bash # run the containter interactively in command mode
 ```
 
-Now use the exposed terminal to test the project.
+The expected output is an interactive bash shell prompt running in the container in the directory `/app`, in which all of the source codes are present.
+Now just test the project as usual.
 
 
 ## Docker Hub and other Registries for container
@@ -88,7 +88,7 @@ Images can also be pulled onto your local machine independently of a `Dockerfile
 docker pull quay.io/capk/ubuntu-2404-container-disk:v1.32.1
 ```
 
-Image pulled this way have a very long name. Tag them for convenience..
+Images pulled this way have a very long name. Tag them for convenience..
 
 ```bash
 docker tag quay.io/capk/ubuntu-2404-container-disk:v1.32.1 my_ubuntu:latest
