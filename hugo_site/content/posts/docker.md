@@ -2,7 +2,7 @@
 date: '2025-09-07T18:49:13+08:00'
 title: 'Docker for Development and Testing'
 draft: false
-tags: ["docker", "development", "testing"]
+tags: ["docker", "software development", "testing"]
 showToc: true
 TocOpen: false
 hidemeta: false
@@ -88,7 +88,7 @@ Images can also be pulled onto your local machine independently of a `Dockerfile
 docker pull quay.io/capk/ubuntu-2404-container-disk:v1.32.1
 ```
 
-Images pulled this way have a very long name. Tag them for convenience..
+Images pulled this way have a very long name. Tag them for convenience.
 
 ```bash
 docker tag quay.io/capk/ubuntu-2404-container-disk:v1.32.1 my_ubuntu:latest
