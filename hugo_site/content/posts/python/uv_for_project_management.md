@@ -74,3 +74,12 @@ Uv shall have created a virtual environment in the current directory.
 
 Open VSCode or Pycharm in the current directory. (You need open in the current directory else the `.venv/` directory may not be found.)
 Select `.venv/` as python source in your IDE, and everything shall work as fine.
+
+### Runing Python Package as Executable
+
+Some python packages can be run as executable, for example, `black` and `flake8`. 
+The quickest way to to this with uv is 
+
+```
+uvx <executable>
+```
