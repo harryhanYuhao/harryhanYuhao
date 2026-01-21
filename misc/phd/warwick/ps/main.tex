@@ -1,0 +1,89 @@
+\documentclass{article}
+
+% Top margin, right margin, left margin, bottom margin, footnote skip
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\addbibresource{./references.bib}
+% linktocpage shall be added to snippets.
+\usepackage{hyperref,theoremref}
+\hypersetup{
+	colorlinks, 
+	linkcolor={red!40!black}, 
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black},
+	linktocpage % Link table of content to the page instead of the title
+}
+
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{import}
+
+
+\newtheorem{theorem}{Theorema}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollarium}[section]
+\newtheorem{proposition}{Propositio}[theorem]
+\theoremstyle{definition}
+\newtheorem{definition}{Definitio}[section]
+
+\theoremstyle{definition}
+\newtheorem{axiom}{Axioma}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Observatio}[section]
+\newtheorem{hypothesis}{Coniectura}[section]
+\newtheorem{example}{Exampli Gratia}[section]
+
+% Proof Environments
+\newcommand{\thm}[2]{\begin{theorem}[#1]{}#2\end{theorem}}
+
+%TODO mayby proof environment shall have more margin
+\renewenvironment{proof}{\vspace{0.4cm}\noindent\small{\emph{Demonstratio.}}}{\qed\vspace{0.4cm}}
+% \renewenvironment{proof}{{\bfseries\emph{Demonstratio.}}}{\qed}
+\renewcommand\qedsymbol{Q.E.D.}
+% \renewcommand{\chaptername}{Caput}
+% \renewcommand{\contentsname}{Index Capitum} % Index Capitum 
+\renewcommand{\emph}[1]{\textbf{\textit{#1}}}
+\renewcommand{\ker}[1]{\operatorname{Ker}{#1}}
+
+%\DeclareMathOperator{\ker}{Ker}
+
+% New Commands
+\newcommand{\bb}[1]{\mathbb{#1}} %TODO add this line to nvim snippets
+\newcommand{\orb}[2]{\text{Orb}_{#1}({#2})}
+\newcommand{\stab}[2]{\text{Stab}_{#1}({#2})}
+\newcommand{\im}[1]{\text{im}{\ #1}}
+\newcommand{\se}[2]{\text{send}_{#1}({#2})}
+
+\title{A Personal Statement for Application to Warwick Mathematics CDT}
+\author{Yuhao Han} 
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Pursuing a PhD degree in mathematics is a significant commitment. It is therefore necessary for me to explain my motivation to take on such a challenge and why I would like to study at the University of Warwick.
+
+My primary motivation is that I enjoy studying mathematics because I find mathematics beautiful. For example, group theory, whose formulation consists of four concise axioms, is able to describe all the symmetries in the physical world, from the intuitive spatial symmetry of polygons, to the more mysterious symmetry of our four-dimensional universe (the Poincaré Group). Discovering these rules is difficult. Yet the beauty of mathematics is enhanced, instead of hampered, by its difficulty. When contemplating a difficult maths problem, one is excited by the hope of solving it eventually. This feeling will be elevated to a metaphysical state, with the realization that, through the effort, a new rule about the universe may be discovered. Many people have asked me why I have such a zeal for mathematics. Here is my answer: If men were to marvel at the pyramid of Giza, for the ancient Egyptians created it using only primitive tools with great toil and ingenuity, they should marvel still more at mathematics, a far grander edifice, created by innumerable generations of mathematicians since before the Egyptians, using only self-evident logic, with labour and cleverness even greater.
+
+My second motivation to study mathematics is that I believe mathematics is useful, and applications of mathematics may lead to the solutions of important real-world problems. The prime example is Fast Fourier Transform (FFT) in signal handling, an algorithm that served as the foundation of all telecommunication. FFT was inspired by continuous Fourier transform in analysis, which is built upon the algebraic idea of Hilbert Space. Another example is machine learning, many concepts of which are applications of linear algebra and statistics. There are many more unsolved problems like these, awaiting the ingenuities of the mathematicians. It would my life-long honour if I may make contributions.
+
+If the pursuit of one subject is not only satisfying in itself, but also brings the possibility of making a positive impact on our society, no one will hesitate to take on this pursuit, and by doing so achieve his personal and social fulfillment at the same time. Mathematics is such a subject for me.
+
+Having settled my psychological motivations to study mathematics, I shall explain why I would like to choose mathematics CDT programme at Warwick. I do not have a mature research proposal at yet. Thus, the preliminary mathematical training provided by the CDT will be extremely valuable to me, as I can study more advanced mathematics and decide what shall be my future research. I am also in admiration of many faculty members at Warwick. For example, my first exposure to algebraic geometry came from the book \textit{Undergraduate Algebraic Geometry} by Professor Miles Reid. This book was largely responsible for my interest in algebraic geometry. It was my great surprise to find out Professor Reid is still an active faculty member at Warwick. It would be my great pleasure for me to study under the supervision of one of the renowned mathematicians, like Professor Reid, at Warwick.
+
+During my higher education, I had a series of research experiences. At the University of Edinburgh, I had conducted algebraic geometry research on hypertoric varieties using combinatorial methods. I am also a self-taught programmer and had many practical experiences coding in C, C++, Python, and Rust, including a research experience about Linux kernel computer express link. Currently, I am also collaborating on a paper on the theory of deep learning from the perspective of the Free Energy Principle. Traditionally, mathematics has been used as a tool in computer science (CS). However, recently, there have been many proposals to use CS to aid mathematical research,  an example of which is the computer proof system Lean. I believe my knowledge of CS and AI will be valuable to my future mathematical research.
+
+In conclusion, I believe my passion for mathematics, my previous research experience, and my knowledge in mathematics and computer science will make me a strong candidate for a mathematics PhD candidate at the University of Warwick.
+
+\end{document}

@@ -1,0 +1,147 @@
+\documentclass{article}
+
+% Top margin, right margin, left margin, bottom margin, footnote skip
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\addbibresource{./references.bib}
+% linktocpage shall be added to snippets.
+\usepackage{hyperref,theoremref}
+\hypersetup{
+	colorlinks, 
+	linkcolor={red!40!black}, 
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black},
+	linktocpage % Link table of content to the page instead of the title
+}
+
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{import}
+
+
+\newtheorem{theorem}{Theorema}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollarium}[section]
+\newtheorem{proposition}{Propositio}[theorem]
+\theoremstyle{definition}
+\newtheorem{definition}{Definitio}[section]
+
+\theoremstyle{definition}
+\newtheorem{axiom}{Axioma}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Observatio}[section]
+\newtheorem{hypothesis}{Coniectura}[section]
+\newtheorem{example}{Exampli Gratia}[section]
+
+% Proof Environments
+\newcommand{\thm}[2]{\begin{theorem}[#1]{}#2\end{theorem}}
+
+%TODO mayby proof environment shall have more margin
+\renewenvironment{proof}{\vspace{0.4cm}\noindent\small{\emph{Demonstratio.}}}{\qed\vspace{0.4cm}}
+% \renewenvironment{proof}{{\bfseries\emph{Demonstratio.}}}{\qed}
+\renewcommand\qedsymbol{Q.E.D.}
+% \renewcommand{\chaptername}{Caput}
+% \renewcommand{\contentsname}{Index Capitum} % Index Capitum 
+\renewcommand{\emph}[1]{\textbf{\textit{#1}}}
+\renewcommand{\ker}[1]{\operatorname{Ker}{#1}}
+
+%\DeclareMathOperator{\ker}{Ker}
+
+\title{Statement of Purpose \\ \large For Application to Fundamentals of AI (EIT CDT) \\ Word Count: 987}
+\author{Yuhao Han} 
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\subsection*{Past Education and Aspirations}
+
+I received an undergraduate degree in mathematics from the University of Edinburgh in 2025, and I am currently pursuing an MSc in Mathematics and Foundations of Computer Science at the University of Oxford. 
+Through my education, I have obtained deep knowledge of both pure and applied mathematics, including algebra, topology, and statistics, as well as various aspects of computer science, including operating systems, algorithms, and compilers.
+
+Artificial intelligence, which is rapidly revolutionising our society, has its foundations in applied mathematics and statistics. 
+Through my mathematical education, however, I have discovered that pure mathematics is often equally illuminating in solving practical problems.
+The prime example is Fast Fourier Transform, which was inspired by the highly theoretical Fourier analysis and Hilbert space, and has become an algorithm that underpins all modern communications.
+
+I believe pure mathematics will be instrumental in our understanding of the foundations of AI in a similar way.
+In fact, there have been some interests in this direction. 
+For example, recently DeepSeek \cite{deepseek} has proposed the Manifold-Constrained Hyper-Connections framework, which exhibits better performance while ensuring efficiency by connecting AI models with advanced ideas in differential geometry.
+I am fascinated by the potential connections between pure mathematics and AI demonstrated by this example, while in the same time amazed by the power of AI.
+Therefore, I would like to apply my applied and pure mathematical skills to the study of foundation of AI.
+
+\subsection*{Relevant Research Experience}
+
+I am an active AI researcher, collaborating with Zhikang Chen to investigate how to exploit the Neural Collapse phenomenon to train better LLM models.
+The term Neural Collapse \cite{NC} denotes the surprising observation that well-trained classification models have their last-layer features and parameters arranged in highly symmetric geometric structures called Equiangular Tight Frames (ETF).
+
+Although the origin of Neural Collapse is still in debate,
+the ETF structures possess astonishing symmetry and may help answer fundamental questions about why LLMs are so effective.
+
+On the practical side, some researchers \cite{chen-direction} have proposed to exploit this structure to design better training algorithms.
+The motivation is the assumption that the ETF structure is optimal for classification tasks, and models may be improved by aligning their parameters to the ETF structure.
+
+My collaboration with Zhikang has yielded promising results.
+We hypothesized that intermediate-layer parameters may also exhibit structures similar to ETF.
+A novel training algorithm was developed based on this idea that aligns the intermediate-layer features to ETF structures, which leads to steady performance improvements.
+The initial success of our algorithm is encouraging, as it demonstrates the possibility that similar intermediate-layer parameter alignment may boost the performance of other training algorithms.
+
+I am also working on the theoretical side of Neural Collapse, aiming to show mathematically that aligning the parameters with ETF structures would improve the performance of classification networks.
+I have found some promising theories by exploiting the symmetric structure of ETF.
+
+Our work is innovative and at the frontier of AI research. 
+To our knowledge, both of our training algorithm and mathematical analysis are novel, as we have found no existing papers reporting similar findings.
+
+\subsection*{Addressing a Programming Error}
+
+In my first attempt to implement the gradient descent algorithm, I made the classical off-by-one mistake when handling the index of the tensor.
+This bug was hard to discover, as it did not lead to a program crash or other obvious buggy behaviours.
+I noticed something was wrong as the model did not achieve the expected performance.
+
+My first attempt was to debug by printing the tensors.
+This did not help much, as the dimensions were correct, and the tensors were too large to be validated by the naked eyes.
+The bug was revealed after I computed the numerical gradients of the loss function, which were different from the gradients computed by back-propagation.
+After carefully checking the function that performed gradient descent, I found an off-by-one error in the tensor index. 
+My model achieved its expected performance by fixing this error.
+ 
+\subsection*{Why FoAI CDT}
+
+FoAI is well aligned with my academic background and research goals. 
+Its emphasis on the foundations of AI directly matches my interest in understanding AI through rigorous mathematical study using tools from both applied and pure mathematics.
+
+FoAI brings together a diverse cohort of different backgrounds and interests.
+I believe this will foster many fruitful collaborations, which is especially important in AI research, which relies deep understandings in various interdisciplinary subjects. 
+I am excited to join and contribute to this community with my knowledge in pure mathematics. 
+
+FoAI's rotation projects are also attractive to me, as they will give me valuable opportunities to study to different aspects of AI and help me decide which one would fit my interests the best.
+
+
+\subsection*{Support EIT Themes}
+
+My interest lies in the interdisciplinary subject connecting AI and mathematics, which will naturally foster collaborations between mathematicians, computer scientists, and AI researchers and directly aligns with EIT's themes of collaboration.
+
+In particular, pure mathematical disciplines such as logic, type theory, and topology have played a central role in the development of formal methods for ensuring software reliability. I believe similar mathematically grounded approaches will become increasingly important for developing reliable and trustworthy AI systems. This aligns closely with the EIT AI research themes of Causality and Decision Science and Health Foundation Models, where robustness and reliability are essential.
+
+In addition, I am excited to apply my research to bring positive impacts to our society through entrepreneurship.
+This ambition aligns well with EIT's purpose of translating scientific discoveries to real-world impact.
+I have previous entrepreneurial experiences in Edinburgh. 
+I was a co-founder of the startup Yetin Ltd, where we advertised internship job offerings in technology sectors and posted programming tutorials.
+Although the influence of my startup was limited, it has filled me with entrepreneurial enthusiasm and helped me understand how great the positive impact we may make by bridging theoretical knowledge in academia with applications in the real world.
+
+
+\subsection*{Primary Interest}
+
+My primary interest is the Foundations.
+
+
+\printbibliography
+\end{document}

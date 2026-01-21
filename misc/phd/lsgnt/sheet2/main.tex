@@ -1,0 +1,143 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\addbibresource{./references.bib}
+% linktocpage shall be added to snippets.
+\usepackage{hyperref,theoremref}
+\hypersetup{
+	colorlinks, 
+	linkcolor={red!40!black}, 
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black},
+	linktocpage % Link table of content to the page instead of the title
+}
+
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{import}
+
+
+\newtheorem{theorem}{Theorema}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollarium}[section]
+\newtheorem{proposition}{Propositio}[theorem]
+\theoremstyle{definition}
+\newtheorem{definition}{Definitio}[section]
+
+\theoremstyle{definition}
+\newtheorem{axiom}{Axioma}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Observatio}[section]
+\newtheorem{hypothesis}{Coniectura}[section]
+\newtheorem{example}{Exampli Gratia}[section]
+
+% Proof Environments
+\newcommand{\thm}[2]{\begin{theorem}[#1]{}#2\end{theorem}}
+
+%TODO mayby proof environment shall have more margin
+\renewenvironment{proof}{\vspace{0.4cm}\noindent\small{\emph{Demonstratio.}}}{\qed\vspace{0.4cm}}
+% \renewenvironment{proof}{{\bfseries\emph{Demonstratio.}}}{\qed}
+\renewcommand\qedsymbol{Q.E.D.}
+% \renewcommand{\chaptername}{Caput}
+% \renewcommand{\contentsname}{Index Capitum} % Index Capitum 
+\renewcommand{\emph}[1]{\textbf{\textit{#1}}}
+\renewcommand{\ker}[1]{\operatorname{Ker}{#1}}
+
+%\DeclareMathOperator{\ker}{Ker}
+
+% New Commands
+\newcommand{\bb}[1]{\mathbb{#1}} %TODO add this line to nvim snippets
+\newcommand{\orb}[2]{\text{Orb}_{#1}({#2})}
+\newcommand{\stab}[2]{\text{Stab}_{#1}({#2})}
+\newcommand{\im}[1]{\text{im}{\ #1}}
+\newcommand{\se}[2]{\text{send}_{#1}({#2})}
+
+\date{\today}
+
+\begin{document}
+\subsection*{Courses Taken}
+
+The bold ones are more relevent to this application.
+
+I took the following courses in the school year 2023-2024 at Edinburgh:
+\begin{itemize}
+	\item \textbf{Geometry}. This is an introductory course to differential geometry, focusing on curves and surfaces in $\bb{R}^3$.
+	\item Honours Algebra 
+	\item Honours Analysis 
+	\item Honours Complex Variables
+	\item Honours Differential Equations
+	\item Combinatorics and Graph Theory 
+	\item Numerical Linear Algebra 
+	\item Metric space
+\end{itemize}
+
+In the school year 2024-2025 at Edinburgh:
+\begin{itemize}
+	\item \textbf{Differential Geometry}. An elementary course on manifold, convering bundles, differential forms, integral flows, geodesics, and integration on manifolds.
+	\item \textbf{Geometry of General Relativity}. An course in the perspective of mathemtical physics, covering Levi-Civita connection, curvature tensors, Einstein field equations, and the Schwarzschild solution.
+	\item \textbf{Algebraic Topology}. An introductory course focusing on homotopies, fundamental groups, and covering spaces.
+	\item \textbf{Algebraic Geometry}. An introductory course that covers affine varieties, the Zariski topology, and regular functions.
+	\item \textbf{Introduction to Lie Groups}. A more advanced course covering Lie algebras, the exponential map, Dynkin diagrams, Cartan subalgebras, root systems, and classification of semisimple Lie algebras.
+	\item Analytic Number Theory 
+	\item Commutative Algebra
+	\item Group Theory 
+	\item Galois Theory 
+	\item General Topology
+\end{itemize}
+
+I am taking and planning to take the following courses in the school year 2025-2026 at Oxford.
+\begin{itemize}
+	\item \textbf{Algebraic Geometry}. A more rigorous treatment varieties using schemes and sheaves.
+	\item \textbf{Introduction to Schemes}. (Planned to take)
+	\item Category Theory 
+	\item Homological Algebra
+	\item Analytic Topology. (Planned to take)
+	\item \textbf{Geometric Group Theory}. (Planned to take)
+\end{itemize}
+
+\subsection*{Research Experience} 
+
+I have conducted a summer research on algebraic geometry under the supervision of Dr Sukjoo Lee, who is currently a senior researcher in IBS-CGP in Pohang, Korea.
+I studied a specific type of affine hypertoric variety and developed an algorithm to count its $F_q$-count polynomials, which is compared with the h-polynomial of the complex associated with the corresponding hyperplane arrangement
+The theoretical algebraic problem was broken down to an equivalent combinatoric problem of counting points of intersections of simple hyperplane arrangements in $F^n_q$, $q$ is prime.
+I have received a scholarship of 2000 pounds for this research from the University of Edinburgh.
+
+In the final year at Edinburgh, I completed a group project with two other classmates titled \textit{Quantifying Chaos}. 
+Our work attempted to define chaos in dynamical systems with rigour, with discussion of logistic bifurcations and a description of the surprising universal Feigenbaum constants. 
+We made two original contributions in this project.
+Our first contribution was to devise novel efficient algorithms using C++ GMP arbitrary precision library for numerical simulations of chaos, which required a higher precision than the IEEE double precision floating point format provides. 
+We have also combined our knowledge in pure mathematics, especially in topology and analysis, with dynamical systems to come up with some original proofs on properties of bifurcations and chaos. 
+One of our graders had commented that \textit{This project shows some original content and is well beyond the scope of a graduate course in dynamical system.}
+
+I also have several other research experiences in computer science and AI.
+I have worked in the research group led by Dr. Antonio Barbalace at the University of Edinburgh, where I was responsible for developing Linux kernel drivers for Dolphin interconnect PCIe NTB, as part of a greater project on computer express links (CXL). 
+Currently, I am working on an AI project exploring the mathematical foundation of supervised and reinforcement learning. 
+My work explores the connection between the ideas of Free Energy Principle and the surprising observation of neural collapse.
+My collaboration with Zhikang Chen, a PhD student at the University of Oxford, has produced a preprint paper: \textit{A Brain-Inspired Continual Learning System for Cross-User and Cross-Device Biosignals}.
+
+\subsection*{Personal Statement}
+
+Pursuing a PhD degree in mathematics is a significant commitment. It is therefore necessary for me to explain my motivation to take on such a challenge.
+
+My primary motivation is that I enjoy studying mathematics because I find mathematics beautiful. For example, group theory, whose formulation consists of four concise axioms, is able to describe all the symmetries in the physical world, from the intuitive spatial symmetry of polygons, to the more mysterious symmetry of our four-dimensional universe (the Poincaré Group). Discovering these rules is difficult. Yet the beauty of mathematics is enhanced, instead of hampered, by its difficulty. When contemplating a difficult maths problem, one is excited by the hope of solving it eventually. This feeling will be elevated to a metaphysical state, with the realization that, through the effort, a new rule about the universe may be discovered. Many people have asked me why I have such a zeal for mathematics. Here is my answer: If men were to marvel at the pyramid of Giza, for the ancient Egyptians created it using only primitive tools with great toil and ingenuity, they should marvel still more at mathematics, a far grander edifice, created by innumerable generations of mathematicians since before the Egyptians, using only self-evident logic, with labour and cleverness even greater.
+
+My second motivation to study mathematics is that I believe mathematics is useful, and applications of mathematics may lead to the solutions of important real-world problems. The prime example is Fast Fourier Transform (FFT) in signal handling, an algorithm that served as the foundation of all telecommunication. FFT was inspired by continuous Fourier transform in analysis, which is built upon the algebraic idea of Hilbert Space. Another example is machine learning, many concepts of which are applications of linear algebra and statistics. 
+Recently, researchers have proposed suprising connections between Riemannian geometry and deep learning. 
+The argument is similar to the usage of Riemannian Geometry in General Relativity, where a special manifold was constructed as a plausible explanation for the effectiveness of large language models. There are many more unsolved problems like these, awaiting the ingenuities of the mathematicians. It would my life-long honour if I may make contributions.
+
+If the pursuit of one subject is not only satisfying in itself, but also brings the possibility of making a positive impact on our society, no one will hesitate to take on this pursuit, and by doing so achieve his personal and social fulfillment at the same time. Mathematics is such a subject for me.
+
+
+% \tableofcontents
+\end{document}
