@@ -33,7 +33,6 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
-  ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   fuseOpts:
     isCaseSensitive: false
