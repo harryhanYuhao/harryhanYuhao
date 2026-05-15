@@ -3,7 +3,7 @@ date: '2026-02-24T20:47:23+01:00'
 title: "Tips on Vscode"
 ---
 
-I believe mastering the techniques of Vim dramatically increase one's coding efficiency. 
+I believe mastering the techniques of Vim can dramatically increase one's coding efficiency. 
 Yet in the meantime Vim runs in a terminal, and persisting to code a in terminal nowadays (time of writing was 2026) seems a little too obstinate, considering so many recent advancements on UI that are too difficult to replicate in a terminal.
 
 I believe Vim mode in VSCode gives a perfect solution.

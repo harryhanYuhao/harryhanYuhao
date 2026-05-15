@@ -1,0 +1,180 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global/global}
+    \entry{mansky2023permutationinvariantquantumcircuits}{misc}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7faf4b4475d87a4983753aa9fdfcd288}{%
+           family={Mansky},
+           familyi={M\bibinitperiod},
+           given={Maximilian\bibnamedelima Balthasar},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb7761372f95cd938fe2ce4233d05b39}{%
+           family={Castillo},
+           familyi={C\bibinitperiod},
+           given={Santiago\bibnamedelima Londoño},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=631d5c1bd49b02c82015e1472c8001b0}{%
+           family={Puigvert},
+           familyi={P\bibinitperiod},
+           given={Victor\bibnamedelima Ramos},
+           giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50ab06712d6f9fe886f00ca1a2ff22a6}{%
+           family={Linnhoff-Popien},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8166e28207a9ec1c8035b95e4b7c10f2}
+      \strng{fullhash}{667427afb801845a9f0b12c3ace4423b}
+      \strng{fullhashraw}{667427afb801845a9f0b12c3ace4423b}
+      \strng{bibnamehash}{667427afb801845a9f0b12c3ace4423b}
+      \strng{authorbibnamehash}{667427afb801845a9f0b12c3ace4423b}
+      \strng{authornamehash}{8166e28207a9ec1c8035b95e4b7c10f2}
+      \strng{authorfullhash}{667427afb801845a9f0b12c3ace4423b}
+      \strng{authorfullhashraw}{667427afb801845a9f0b12c3ace4423b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Permutation-invariant quantum circuits}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2312.14909
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2312.14909
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2312.14909
+      \endverb
+    \endentry
+    \entry{nielsen2005}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=afe17482fc813e497188aee3b3783879}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{afe17482fc813e497188aee3b3783879}
+      \strng{fullhash}{afe17482fc813e497188aee3b3783879}
+      \strng{fullhashraw}{afe17482fc813e497188aee3b3783879}
+      \strng{bibnamehash}{afe17482fc813e497188aee3b3783879}
+      \strng{authorbibnamehash}{afe17482fc813e497188aee3b3783879}
+      \strng{authornamehash}{afe17482fc813e497188aee3b3783879}
+      \strng{authorfullhash}{afe17482fc813e497188aee3b3783879}
+      \strng{authorfullhashraw}{afe17482fc813e497188aee3b3783879}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{A geometric approach to quantum circuit lower bounds}
+      \field{year}{2005}
+      \verb{eprint}
+      \verb quant-ph/0502070
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/quant-ph/0502070
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/quant-ph/0502070
+      \endverb
+    \endentry
+    \entry{Nielsen2006}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=afe17482fc813e497188aee3b3783879}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=104db54f37783bdd354697e13e7bd841}{%
+           family={Dowling},
+           familyi={D\bibinitperiod},
+           given={Mark\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01eff13c9ee07ed51d1dfe1b598bf969}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Mile},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40a30e448533c2e229ba4767cabc832c}{%
+           family={Doherty},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science (AAAS)}%
+      }
+      \strng{namehash}{cdedef143df4d7f70c81437d6ea26114}
+      \strng{fullhash}{d4b9547dc58ffcb06b39c11e923726ba}
+      \strng{fullhashraw}{d4b9547dc58ffcb06b39c11e923726ba}
+      \strng{bibnamehash}{d4b9547dc58ffcb06b39c11e923726ba}
+      \strng{authorbibnamehash}{d4b9547dc58ffcb06b39c11e923726ba}
+      \strng{authornamehash}{cdedef143df4d7f70c81437d6ea26114}
+      \strng{authorfullhash}{d4b9547dc58ffcb06b39c11e923726ba}
+      \strng{authorfullhashraw}{d4b9547dc58ffcb06b39c11e923726ba}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issn}{1095-9203}
+      \field{journaltitle}{Science}
+      \field{month}{2}
+      \field{number}{5764}
+      \field{title}{Quantum Computation as Geometry}
+      \field{volume}{311}
+      \field{year}{2006}
+      \field{pages}{1133\bibrangedash 1135}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1126/science.1121541
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1126/science.1121541
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1126/science.1121541
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

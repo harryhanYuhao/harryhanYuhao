@@ -1,0 +1,91 @@
+\documentclass{article}
+% Top margin, right margin, left margin, bottom margin, footnote skip
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\addbibresource{./references.bib}
+% linktocpage shall be added to snippets.
+\usepackage{hyperref,theoremref}
+\hypersetup{
+	colorlinks, 
+	linkcolor={red!40!black}, 
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black},
+	linktocpage % Link table of content to the page instead of the title
+}
+
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{import}
+
+
+\newtheorem{theorem}{Theorema}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollarium}[section]
+\newtheorem{proposition}{Propositio}[theorem]
+\theoremstyle{definition}
+\newtheorem{definition}{Definitio}[section]
+
+\theoremstyle{definition}
+\newtheorem{axiom}{Axioma}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Observatio}[section]
+\newtheorem{hypothesis}{Coniectura}[section]
+\newtheorem{example}{Exampli Gratia}[section]
+
+% Proof Environments
+\newcommand{\thm}[2]{\begin{theorem}[#1]{}#2\end{theorem}}
+
+%TODO mayby proof environment shall have more margin
+\renewenvironment{proof}{\vspace{0.4cm}\noindent\small{\emph{Demonstratio.}}}{\qed\vspace{0.4cm}}
+% \renewenvironment{proof}{{\bfseries\emph{Demonstratio.}}}{\qed}
+\renewcommand\qedsymbol{Q.E.D.}
+% \renewcommand{\chaptername}{Caput}
+% \renewcommand{\contentsname}{Index Capitum} % Index Capitum 
+\renewcommand{\emph}[1]{\textbf{\textit{#1}}}
+\renewcommand{\ker}[1]{\operatorname{Ker}{#1}}
+
+%\DeclareMathOperator{\ker}{Ker}
+
+% New Commands
+\newcommand{\bb}[1]{\mathbb{#1}} %TODO add this line to nvim snippets
+\newcommand{\orb}[2]{\text{Orb}_{#1}({#2})}
+\newcommand{\stab}[2]{\text{Stab}_{#1}({#2})}
+\newcommand{\im}[1]{\text{im}{\ #1}}
+\newcommand{\se}[2]{\text{send}_{#1}({#2})}
+
+\title{Ars Amatoriae}
+\author{Publius Ovidius Naso} 
+\date{\today}
+
+\begin{document}
+% \tableofcontents
+
+Dear Awards Panel of China Oxford Scholarship Fund,
+\\
+
+My DPhil research area is quantum computation. Computation, regardless whether it is performed by the ancient abacus or the modern electric computers, at its fundamental level is a physical process. While abacus and electric computers are based on classical physics, quantum computers conduct computation by exploiting quantum mechanics. Quantum mechanics allows phenomena that seem impossible in classical viewpoint, such as the superposition of dead and alive state of Shroedinger’s cat. Precisely those bizarre phenomena allow us to break the classical constraints and perform computations that were thought impossible. Theoretical studies have shown that some quantum algorithms, such as Shor’s algorithm for factoring, are exponentially faster than their best classical equivalents. This ability of quantum computers to outperform classical ones is called quantum supremacy.
+
+While the theory of quantum computations is promising, the physical implementation of quantum computers has been proved extremely challenging. At the moment, the best quantum computer can only handle dozens of qubits, which is the quantum mechanical equivalent of bit. This number is dwarfed by the trillions of bits possessed by modern electronic computers. Nevertheless, quantum supremacy in specific problems has been achieved even with such a limited amount of qubits. In 2024, Google reported its Willow quantum computer with 105 qubits took 5 minutes to complete a random circuit sampling task that would take today's fastest super computers 10 septillion (1025) years \cite{google}. 
+
+Because of these promising results, many people, including myself, believe that quantum computers will fundamentally change our ways of computation and revolutionise our society like electronic computers have done. Many corporations, including Huawei, Baidu, Google, and Microsoft have formed their quantum computation subsidies. Billions of investments and hundreds of startup up companies are following them closely. Policy makers are also making policies to sponsor research in quantum technologies. The UK has established the National Quantum Technology Programme, aiming to foster a quantum enabled economy. Very importantly, in China’s recent 14th National Committee of the Chinese People's Political Consultative Conference in March 2026, Premier Li Qiang stated quantum technology is one of the new technologies of future and quality productive force. Through my DPhil study in quantum computation, I hope to make meaningful contributions to this exciting field of research. After my study, I plan to follow Premier Li’s call by returning to China, founding a quantum computation company, and applying my skill and knowledge in quantum computation to make positive impacts in our society. 
+
+On February 18, 2026, I was honoured to receive an offer from University of Oxford Department of Computer Science to study DPhil under the supervision of Professor Sergii Strelchuk and Dr Sathyawageeswar Subramanian. Unfortunately, I have not secured any scholarship or funding. I would be extremely grateful if COSF may support my study, and, ultimately, my goal to bring positive impacts to our society through research in quantum information.
+
+
+
+\hfill Yuhao Han \hspace{1.95em}
+
+\hfill \today
+
+\printbibliography
+\end{document}

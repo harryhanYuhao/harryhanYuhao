@@ -1,0 +1,96 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\addbibresource{./references.bib}
+% linktocpage shall be added to snippets.
+\usepackage{hyperref,theoremref}
+\hypersetup{
+	colorlinks, 
+	linkcolor={red!40!black}, 
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black},
+	linktocpage % Link table of content to the page instead of the title
+}
+
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{import}
+
+
+\newtheorem{theorem}{Theorema}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollarium}[section]
+\newtheorem{proposition}{Propositio}[theorem]
+\theoremstyle{definition}
+\newtheorem{definition}{Definitio}[section]
+
+\theoremstyle{definition}
+\newtheorem{axiom}{Axioma}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Observatio}[section]
+\newtheorem{hypothesis}{Coniectura}[section]
+\newtheorem{example}{Exampli Gratia}[section]
+
+% Proof Environments
+\newcommand{\thm}[2]{\begin{theorem}[#1]{}#2\end{theorem}}
+
+%TODO mayby proof environment shall have more margin
+\renewenvironment{proof}{\vspace{0.4cm}\noindent\small{\emph{Demonstratio.}}}{\qed\vspace{0.4cm}}
+% \renewenvironment{proof}{{\bfseries\emph{Demonstratio.}}}{\qed}
+\renewcommand\qedsymbol{Q.E.D.}
+% \renewcommand{\chaptername}{Caput}
+% \renewcommand{\contentsname}{Index Capitum} % Index Capitum 
+\renewcommand{\emph}[1]{\textbf{\textit{#1}}}
+\renewcommand{\ker}[1]{\operatorname{Ker}{#1}}
+
+%\DeclareMathOperator{\ker}{Ker}
+
+% New Commands
+\newcommand{\bb}[1]{\mathbb{#1}} %TODO add this line to nvim snippets
+\newcommand{\orb}[2]{\text{Orb}_{#1}({#2})}
+\newcommand{\stab}[2]{\text{Stab}_{#1}({#2})}
+\newcommand{\im}[1]{\text{im}{\ #1}}
+\newcommand{\se}[2]{\text{send}_{#1}({#2})}
+
+\title{Personal Statement for Application of Scholarship at St Catherine's College}
+\author{Yuhao Han} 
+\date{\today}
+
+\begin{document}
+\maketitle
+   As a current student at Oxford reading for Master in Mathematics and Foundation of Computer Science, I have recently received an offer for DPhil in Computer Science at Oxford. 
+   I am writing this letter to express my intention to apply for the scholarships offered by St Catherine's College and explain my personal experience and achievements, in the hope that they will be helpful when the Tutor for Graduates considers my application. 
+
+   My proposed research topic is algorithms in Quantum Computation, which is explained in detail in the research proposal attached. 
+   In the past decades, the advent of computers has revolutionized our world in every aspect. 
+   The building blocks of these computers are classical logic gates relying on classical physics. 
+   It has been conjectured computations can also be achieved using quantum mechanics. The theoretical research on quantum computation has shown promising results. 
+   Many quantum algorithms have been demonstrated to be exponentially faster than the best known classical algorithms.
+   The physical implementation of quantum computer, however, has remained a great challenge. 
+   Nevertheless, I believe that quantum computers may bring revolutionary changes to our world like classical computers did. 
+   I am thrilled to contribute to this exciting area of research. 
+   My long term ambition is to found a quantum computation startup and to bring positive impacts to our world through research.
+   
+   I have completed my undergraduate study in Mathematics at the University of Edinburgh, where my study was focused on the algebraic side of pure mathematics.
+   During the third year of my undergraduate study, I have been awarded Simon's Investigator award of 2000 pounds, recognizing my summer research project in algebraic geometry. 
+   Currently, I am researching on the mathematical foundations of AI, collaborating with Zhikang Chen, another DPhil student at Oxford. 
+   Our work has produced a preprint paper, \textit{InvCLIP: Invariant Vision–Language Alignment via Neural Collapse}, which has been submitted to ICML 2026. 
+
+   I will end this letter with a touch of my personal life beyond the academics. 
+   I am fluent in English and Chinese, with a good command of Italian and Latin. 
+   I especially enjoy classical literature and philosophy. 
+   I can play Chinese flute, and I like football and snooker. 
+   I hope my unique experience will contribute to the community at St Catherine's.
+
+\end{document}

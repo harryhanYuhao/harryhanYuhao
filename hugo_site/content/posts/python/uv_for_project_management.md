@@ -7,7 +7,6 @@ showToc: true
 TocOpen: false
 hidemeta: false
 comments: false
-description: ""
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true

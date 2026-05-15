@@ -1,0 +1,97 @@
+\documentclass{article}
+
+% Top margin, right margin, left margin, bottom margin, footnote skip
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\addbibresource{./references.bib}
+% linktocpage shall be added to snippets.
+\usepackage{hyperref,theoremref}
+\hypersetup{
+	colorlinks, 
+	linkcolor={red!40!black}, 
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black},
+	linktocpage % Link table of content to the page instead of the title
+}
+
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{import}
+
+
+\newtheorem{theorem}{Theorema}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollarium}[section]
+\newtheorem{proposition}{Propositio}[theorem]
+\theoremstyle{definition}
+\newtheorem{definition}{Definitio}[section]
+
+\theoremstyle{definition}
+\newtheorem{axiom}{Axioma}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Observatio}[section]
+\newtheorem{hypothesis}{Coniectura}[section]
+\newtheorem{example}{Exampli Gratia}[section]
+
+% Proof Environments
+\newcommand{\thm}[2]{\begin{theorem}[#1]{}#2\end{theorem}}
+
+%TODO mayby proof environment shall have more margin
+\renewenvironment{proof}{\vspace{0.4cm}\noindent\small{\emph{Demonstratio.}}}{\qed\vspace{0.4cm}}
+% \renewenvironment{proof}{{\bfseries\emph{Demonstratio.}}}{\qed}
+\renewcommand\qedsymbol{Q.E.D.}
+% \renewcommand{\chaptername}{Caput}
+% \renewcommand{\contentsname}{Index Capitum} % Index Capitum 
+\renewcommand{\emph}[1]{\textbf{\textit{#1}}}
+\renewcommand{\ker}[1]{\operatorname{Ker}{#1}}
+
+%\DeclareMathOperator{\ker}{Ker}
+
+% New Commands
+\newcommand{\bb}[1]{\mathbb{#1}} %TODO add this line to nvim snippets
+\newcommand{\orb}[2]{\text{Orb}_{#1}({#2})}
+\newcommand{\stab}[2]{\text{Stab}_{#1}({#2})}
+\newcommand{\im}[1]{\text{im}{\ #1}}
+\newcommand{\se}[2]{\text{send}_{#1}({#2})}
+
+\title{Ars Amatoriae}
+\author{Publius Ovidius Naso} 
+\date{\today}
+
+\begin{document}
+
+Dear department of computer science academic administrator,
+\\
+
+Thank you for reading my personal statement supporting my application for part-time graduate teaching assistant at Oxford. I will use the following paragraph to outline why I am well suited to this role. 
+
+I have recently received an offer to study DPhil in Computer Science under the supervision of Professor Sergii Strelchuk and Dr Sathy Subramanian. I will be a member of Lady Margaret Hall and my research topic will focus on algorithms of quantum computation. 
+
+I received a BSc (Hons) in mathematics from the University of Edinburgh. Currently, I am reading for the degree Master of Science in Mathematics and Foundation of Computer Science at Oxford. I am proficient in various aspects of mathematics related to computer science, including discrete mathematics, linear algebra, type theory, category theory, and the theory of quantum computation. I am also knowledgeable in the more applied areas of computer science, including operating systems and AI. At Edinburgh, I worked as a research intern on the Linux Kernel under the supervision of Prof Antonio Barbalace. I also have research experience in AI. I have recently submitted an article to ICML titled InvCLIP: Invariant Vision–Language Alignment via Neural Collapse. 
+
+I have excellent communication and teaching skills. Last summer, I worked as a private tutor in China, teaching a group of pupils English and mathematics. My students commented that my courses were enjoyable and enlightening. I had also gained teaching experience in Edinburgh, where I had volunteered as a peer support officer, teaching fellow students topics they found challenging in lectures. 
+
+In addition, I have been working as a student ambassador at the University of Edinburgh. In that role, I have led campus tours for prospective students and parents, introducing the university to them while answering their questions. I have also helped at offer holder events at Edinburgh. This experience further demonstrates my communication skills and ability to help at in-person events.
+
+My past productive Michaelmas term shall prove my ability to manage time under a heavy workload. I had to manage my coursework, PhD applications, and research responsibilities. I believe I have completed all three tasks well, finishing the courses with an average of 78\%, submitted a dozen PhD applications and received an offer from Oxford, and submitted one preprint paper to ICML. 
+
+I am also familiar with digital designs. I have been a web developer and I have created many nice-looking websites with coding and digital design tools. An example of my work is my blog available at 
+\\ \href{https://harryhanyuhao.github.io/harryhanYuhao/}{https://harryhanyuhao.github.io/harryhanYuhao/}. 
+
+Through my past teaching experience I have developed a passion to teach. I believe by helping students I am learning and improving as well. Therefore, equipped with a passion to teach, I believe I meet all the selection criteria and am fitting for this role.
+\\
+
+Yours sincerely, 
+
+Yuhao
+\end{document}

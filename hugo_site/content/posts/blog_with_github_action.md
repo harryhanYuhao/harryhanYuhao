@@ -11,7 +11,6 @@ description: "Quick steps to create a blog with Github Pages, Hugo, and PaperMod
 # canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
-disableHLJS: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
