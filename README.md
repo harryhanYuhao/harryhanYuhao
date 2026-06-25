@@ -1,14 +1,9 @@
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true&theme=radical"
-    media="(prefers-color-scheme: dark)"
-  />
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true" />
-</picture>
+<p align="center">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=harryhanYuhao&hide_border=true" alt="GitHub Streak" height="165"/>
+</p>
 
-| <picture> <source srcset="https://github-readme-stats.vercel.app/api/wakatime?&theme=radical&username=yhhan&layout=donut-vertical&show_icons=true" media="(prefers-color-scheme: dark)" /> <source srcset="https://github-readme-stats.vercel.app/api/wakatime?&username=yhhan&layout=donut-vertical&show_icons=true" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" /> <img src="https://github-readme-stats.vercel.app/api?username=harryhanYuhao&show_icons=true" /> </picture> | ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=harryhanYuhao&theme=radical&langs_count=12&layout=donut-vertical&hide=tex,html,css,makefile,cmake,jupyter%20notebook) |
-| ------------ | ------------ |
+<p align="center">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=harryhanYuhao&layout=compact&hide_border=true&langs_count=8&hide=tex,html,css,makefile,cmake,jupyter%20notebook" alt="Top Languages"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?&username=yhhan&layout=compact&langs_count=8&hide=markdown&custom_title=Time%20on%20Coding" alt="Time on Coding" />
+</p>
