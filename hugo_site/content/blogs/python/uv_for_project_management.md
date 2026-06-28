@@ -79,6 +79,6 @@ Select `.venv/` as python source in your IDE, and everything shall work as fine.
 Some python packages can be run as executable, for example, `black` and `flake8`. 
 The quickest way to to this with uv is 
 
-```
+```bash
 uvx <executable>
 ```
