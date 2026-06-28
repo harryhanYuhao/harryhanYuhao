@@ -29,7 +29,9 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: |
+             cd hugo_site
+             hugo --minify
 
       - name: Setup Pages
         id: pages
@@ -38,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: hugo_site/public
   deploy:
     environment:
       name: github-pages
