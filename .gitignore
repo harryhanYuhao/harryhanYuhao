@@ -14,3 +14,5 @@ imports.*
 dist/
 public/
 .DS_Store
+
+CLAUDE.md
