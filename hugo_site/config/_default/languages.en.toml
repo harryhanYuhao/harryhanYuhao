@@ -46,7 +46,7 @@ title = "Yuhao's Site"
 #     { matrix = "https://matrix.to/#/URI" },
 #     { medium = "https://medium.com/username" },
 #     { microsoft = "https://www.microsoft.com/" },
-     { orcid = "https://orcid.org/my-orcid?orcid=0009-0004-9799-3885" },
+     { orcid = "https://orcid.org/orcid=0009-0004-9799-3885" },
 #     { patreon = "https://www.patreon.com/username" },
 #     { pinterest = "https://pinterest.com/username" },
 #     { reddit = "https://reddit.com/user/username" },

@@ -15,16 +15,21 @@
   pageRef = "blogs"
   weight = 10
 
+[[main]]
+  name = "About me"
+  pageRef = "/about_me"
+  weight = 10
+
 # [[main]]
 #   pre = "github"
 #   name = "GitHub"
 #   url = "https://github.com/harryhanYuhao/"
 #   weight = 30
 #
-# [[subnavigation]]
-#   name = "An interesting topic"
-#   pageRef = "tags/interesting-topic"
-#   weight = 10
+[[subnavigation]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 10
 #
 # [[subnavigation]]
 #   name = "My Awesome Category"
